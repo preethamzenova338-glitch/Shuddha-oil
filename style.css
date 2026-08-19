@@ -2713,3 +2713,1210 @@ button {
     }
 
 }
+/* =====================================================
+   PART 4 — OUR PROCESS
+===================================================== */
+
+.process-section {
+
+    position: relative;
+
+    padding: 100px 0 90px;
+
+    background: #f8efd9;
+
+    overflow: hidden;
+
+}
+
+
+.process-container {
+
+    width: min(1180px, calc(100% - 80px));
+
+    margin: 0 auto;
+
+}
+
+
+/* =========================
+   PROCESS HEADING
+========================= */
+
+.process-heading {
+
+    text-align: center;
+
+    max-width: 650px;
+
+    margin: 0 auto 62px;
+
+}
+
+
+.process-heading h2 {
+
+    font-family: var(--serif);
+
+    font-size: clamp(43px, 4.5vw, 60px);
+
+    line-height: 1.02;
+
+    font-weight: 500;
+
+    letter-spacing: -1.5px;
+
+    color: var(--green);
+
+    margin-bottom: 17px;
+
+}
+
+
+.process-heading h2 em {
+
+    color: #74863e;
+
+    font-weight: 400;
+
+}
+
+
+.process-heading p {
+
+    max-width: 480px;
+
+    margin: 0 auto;
+
+    font-size: 12px;
+
+    line-height: 1.7;
+
+    color: #767464;
+
+}
+
+
+/* =====================================================
+   PROCESS STEPS
+===================================================== */
+
+.process-steps {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        45px
+        1fr
+        45px
+        1fr
+        45px
+        1fr;
+
+    align-items: start;
+
+}
+
+
+/* =========================
+   PROCESS STEP
+========================= */
+
+.process-step {
+
+    text-align: center;
+
+    position: relative;
+
+}
+
+
+.process-icon-wrapper {
+
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+
+    margin-bottom: 22px;
+
+}
+
+
+.process-icon {
+
+    width: 76px;
+
+    height: 76px;
+
+    border-radius: 50%;
+
+    background: #fffaf0;
+
+    border: 1px solid #e5dcc0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    position: relative;
+
+    z-index: 2;
+
+    box-shadow:
+        0 6px 18px rgba(81, 72, 36, 0.05);
+
+}
+
+
+/* =========================
+   PROCESS NUMBER
+========================= */
+
+.process-step-number {
+
+    position: absolute;
+
+    right: calc(50% - 55px);
+
+    top: -5px;
+
+    width: 21px;
+
+    height: 21px;
+
+    border-radius: 50%;
+
+    background: #f3ce55;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 7px;
+
+    font-weight: 700;
+
+    color: #45512a;
+
+    z-index: 4;
+
+}
+
+
+/* =========================
+   PROCESS ICONS
+========================= */
+
+.seed-shape {
+
+    width: 21px;
+
+    height: 31px;
+
+    border-radius: 100% 0 100% 0;
+
+    border: 1.5px solid #6f823c;
+
+    transform: rotate(-35deg);
+
+    position: relative;
+
+}
+
+
+.seed-shape::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 1px;
+
+    height: 19px;
+
+    background: #6f823c;
+
+    left: 9px;
+
+    top: 5px;
+
+    transform: rotate(30deg);
+
+}
+
+
+.drop-process {
+
+    width: 22px;
+
+    height: 29px;
+
+    border: 1.5px solid #6f823c;
+
+    border-radius: 70% 35% 65% 65%;
+
+    transform: rotate(45deg);
+
+    position: relative;
+
+}
+
+
+.drop-process::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 5px;
+
+    height: 5px;
+
+    border-radius: 50%;
+
+    background: #9cae5b;
+
+    left: 7px;
+
+    top: 10px;
+
+}
+
+
+.check-process {
+
+    width: 31px;
+
+    height: 31px;
+
+    border-radius: 50%;
+
+    border: 1.5px solid #71843d;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 17px;
+
+    color: #71843d;
+
+}
+
+
+.home-process {
+
+    font-size: 26px;
+
+    color: #71843d;
+
+}
+
+
+/* =========================
+   PROCESS TITLE
+========================= */
+
+.process-step h3 {
+
+    font-family: var(--serif);
+
+    font-size: 22px;
+
+    font-weight: 500;
+
+    color: #2d3925;
+
+    margin-bottom: 10px;
+
+}
+
+
+.process-step p {
+
+    max-width: 180px;
+
+    margin: 0 auto;
+
+    font-size: 10.5px;
+
+    line-height: 1.65;
+
+    color: #777567;
+
+}
+
+
+/* =====================================================
+   CONNECTOR
+===================================================== */
+
+.process-connector {
+
+    height: 76px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+.process-connector span {
+
+    width: 100%;
+
+    height: 1px;
+
+    background: #d4cba9;
+
+    color: #87924e;
+
+    font-size: 18px;
+
+    position: relative;
+
+    text-align: right;
+
+    line-height: 1px;
+
+}
+
+
+.process-connector span::after {
+
+    content: "→";
+
+    position: absolute;
+
+    right: -3px;
+
+    top: -9px;
+
+    background: #f8efd9;
+
+    padding-left: 4px;
+
+}
+
+
+/* =====================================================
+   PROCESS STATEMENT
+===================================================== */
+
+.process-statement {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 14px;
+
+    margin-top: 65px;
+
+}
+
+
+.process-statement p {
+
+    font-family: var(--serif);
+
+    font-size: 13px;
+
+    font-style: italic;
+
+    color: #748145;
+
+}
+
+
+.statement-leaf {
+
+    color: #a3a866;
+
+    font-size: 12px;
+
+}
+
+
+.statement-leaf.left {
+
+    transform: rotate(-20deg);
+
+}
+
+
+.statement-leaf.right {
+
+    transform: rotate(20deg);
+
+}
+
+
+/* =====================================================
+   PART 4 — OUR PROMISE
+===================================================== */
+
+.promise-section {
+
+    position: relative;
+
+    padding: 115px 0;
+
+    background: #fffaf0;
+
+    overflow: hidden;
+
+}
+
+
+.promise-container {
+
+    width: min(1150px, calc(100% - 80px));
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1.05fr 0.95fr;
+
+    gap: 90px;
+
+    align-items: center;
+
+}
+
+
+/* =====================================================
+   PROMISE IMAGE
+===================================================== */
+
+.promise-image-area {
+
+    position: relative;
+
+    padding: 0 18px 18px 0;
+
+}
+
+
+.promise-image-frame {
+
+    height: 510px;
+
+    width: 100%;
+
+    overflow: hidden;
+
+    position: relative;
+
+    border-radius: 3px;
+
+    background: #eee3c8;
+
+}
+
+
+.promise-image-frame img {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.7s ease;
+
+}
+
+
+.promise-image-frame:hover img {
+
+    transform: scale(1.035);
+
+}
+
+
+.promise-image-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(55, 68, 31, 0.02),
+            rgba(55, 68, 31, 0.13)
+        );
+
+    pointer-events: none;
+
+}
+
+
+/* =====================================================
+   FLOATING FAMILY LABEL
+===================================================== */
+
+.promise-floating-label {
+
+    position: absolute;
+
+    left: -25px;
+
+    bottom: 42px;
+
+    width: 145px;
+
+    height: 62px;
+
+    background: #f3ce55;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+    padding: 0 16px;
+
+    box-shadow:
+        0 8px 22px rgba(76, 67, 31, 0.12);
+
+}
+
+
+.floating-icon {
+
+    width: 34px;
+
+    height: 34px;
+
+    border: 1px solid #6d7d3b;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #64763a;
+
+    font-size: 13px;
+
+}
+
+
+.promise-floating-label > span:last-child {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+
+    font-size: 7px;
+
+    letter-spacing: 1.5px;
+
+    color: #647039;
+
+}
+
+
+.promise-floating-label strong {
+
+    font-family: var(--serif);
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+    letter-spacing: 0;
+
+}
+
+
+/* =====================================================
+   PROMISE CONTENT
+===================================================== */
+
+.promise-content {
+
+    padding-right: 10px;
+
+}
+
+
+.promise-label {
+
+    font-size: 9px;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+
+    color: #758340;
+
+    margin-bottom: 17px;
+
+}
+
+
+.promise-content h2 {
+
+    font-family: var(--serif);
+
+    font-size: clamp(43px, 4vw, 58px);
+
+    font-weight: 500;
+
+    line-height: 1.03;
+
+    letter-spacing: -1.4px;
+
+    color: var(--green);
+
+    margin-bottom: 20px;
+
+}
+
+
+.promise-content h2 em {
+
+    color: #71833c;
+
+    font-weight: 400;
+
+}
+
+
+.promise-accent {
+
+    width: 45px;
+
+    height: 2px;
+
+    background: #dfba43;
+
+    margin-bottom: 22px;
+
+}
+
+
+/* =====================================================
+   PROMISE TEXT
+===================================================== */
+
+.promise-lead {
+
+    font-family: var(--serif);
+
+    font-size: 16px;
+
+    line-height: 1.5;
+
+    color: #596b35;
+
+    margin-bottom: 16px;
+
+}
+
+
+.promise-content > p:not(.promise-lead) {
+
+    font-size: 12px;
+
+    line-height: 1.8;
+
+    color: #747365;
+
+    margin-bottom: 14px;
+
+}
+
+
+/* =====================================================
+   PROMISE POINTS
+===================================================== */
+
+.promise-points {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 9px;
+
+    margin: 23px 0 28px;
+
+}
+
+
+.promise-point {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    font-size: 10.5px;
+
+    color: #5e654a;
+
+}
+
+
+.promise-check {
+
+    width: 20px;
+
+    height: 20px;
+
+    border-radius: 50%;
+
+    background: #f4e6bd;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 10px;
+
+    color: #71823e;
+
+}
+
+
+/* =====================================================
+   BRAND PROMISE
+===================================================== */
+
+.brand-promise {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: 27px;
+
+}
+
+
+.brand-promise-line {
+
+    width: 2px;
+
+    height: 42px;
+
+    background: #e1bd47;
+
+}
+
+
+.brand-promise > div {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+
+}
+
+
+.brand-promise-small {
+
+    font-size: 7px;
+
+    letter-spacing: 2px;
+
+    color: #8a936b;
+
+}
+
+
+.brand-promise strong {
+
+    font-family: var(--serif);
+
+    font-size: 18px;
+
+    font-style: italic;
+
+    font-weight: 500;
+
+    color: #586a35;
+
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1000px) {
+
+    .process-container {
+
+        width: calc(100% - 50px);
+
+    }
+
+
+    .process-steps {
+
+        grid-template-columns:
+            1fr
+            30px
+            1fr
+            30px
+            1fr
+            30px
+            1fr;
+
+    }
+
+
+    .promise-container {
+
+        width: calc(100% - 50px);
+
+        gap: 55px;
+
+    }
+
+
+    .promise-image-frame {
+
+        height: 450px;
+
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 700px) {
+
+    .process-section {
+
+        padding: 75px 0 70px;
+
+    }
+
+
+    .process-container {
+
+        width: calc(100% - 40px);
+
+    }
+
+
+    .process-heading {
+
+        margin-bottom: 45px;
+
+    }
+
+
+    .process-heading h2 {
+
+        font-size: 42px;
+
+        letter-spacing: -1px;
+
+    }
+
+
+    .process-heading p {
+
+        font-size: 11px;
+
+    }
+
+
+    .process-steps {
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 0;
+
+    }
+
+
+    .process-step {
+
+        width: 100%;
+
+        max-width: 310px;
+
+    }
+
+
+    .process-icon {
+
+        width: 70px;
+
+        height: 70px;
+
+    }
+
+
+    .process-step-number {
+
+        right: calc(50% - 52px);
+
+    }
+
+
+    .process-step h3 {
+
+        font-size: 21px;
+
+    }
+
+
+    .process-step p {
+
+        max-width: 250px;
+
+        font-size: 10.5px;
+
+    }
+
+
+    .process-connector {
+
+        height: 45px;
+
+        width: 1px;
+
+    }
+
+
+    .process-connector span {
+
+        width: 1px;
+
+        height: 40px;
+
+        background: #d4cba9;
+
+    }
+
+
+    .process-connector span::after {
+
+        content: "↓";
+
+        right: auto;
+
+        top: 12px;
+
+        left: -5px;
+
+        padding: 4px 0;
+
+        background: #f8efd9;
+
+    }
+
+
+    .process-statement {
+
+        margin-top: 45px;
+
+    }
+
+
+    /* Promise */
+
+    .promise-section {
+
+        padding: 80px 0;
+
+    }
+
+
+    .promise-container {
+
+        width: calc(100% - 40px);
+
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 55px;
+
+    }
+
+
+    .promise-image-area {
+
+        width: 100%;
+
+        padding-right: 12px;
+
+    }
+
+
+    .promise-image-frame {
+
+        height: 390px;
+
+    }
+
+
+    .promise-floating-label {
+
+        left: -8px;
+
+        bottom: 25px;
+
+    }
+
+
+    .promise-content {
+
+        padding-right: 0;
+
+        text-align: center;
+
+    }
+
+
+    .promise-content h2 {
+
+        font-size: 42px;
+
+        letter-spacing: -1px;
+
+    }
+
+
+    .promise-accent {
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+    }
+
+
+    .promise-lead {
+
+        font-size: 15px;
+
+    }
+
+
+    .promise-content > p:not(.promise-lead) {
+
+        font-size: 11px;
+
+        line-height: 1.75;
+
+    }
+
+
+    .promise-points {
+
+        align-items: center;
+
+    }
+
+
+    .brand-promise {
+
+        justify-content: center;
+
+        text-align: left;
+
+    }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 430px) {
+
+    .process-heading h2 {
+
+        font-size: 38px;
+
+    }
+
+
+    .process-icon {
+
+        width: 66px;
+
+        height: 66px;
+
+    }
+
+
+    .promise-image-frame {
+
+        height: 340px;
+
+    }
+
+
+    .promise-content h2 {
+
+        font-size: 38px;
+
+    }
+
+
+    .promise-floating-label {
+
+        width: 132px;
+
+        height: 57px;
+
+    }
+
+
+    .promise-floating-label strong {
+
+        font-size: 13px;
+
+    }
+
+}
