@@ -1,1 +1,991 @@
 
+/* =====================================================
+   SHUDDHA OIL
+   PART 1 — HEADER + HERO
+===================================================== */
+
+
+/* =========================
+   ROOT VARIABLES
+========================= */
+
+:root {
+
+    --cream: #fff8e8;
+    --cream-light: #fffaf0;
+    --cream-dark: #f7edcf;
+
+    --gold: #f5cf55;
+    --gold-dark: #e9bd35;
+
+    --green: #273b20;
+    --green-light: #718d38;
+
+    --text: #26301f;
+    --muted-text: #68685c;
+
+    --white: #ffffff;
+
+    --serif: "Playfair Display", Georgia, serif;
+    --sans: "DM Sans", Arial, sans-serif;
+
+}
+
+
+/* =========================
+   BASIC RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--cream);
+    color: var(--text);
+    font-family: var(--sans);
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font-family: inherit;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.site-header {
+    width: 100%;
+    height: 76px;
+
+    background: rgba(255, 250, 239, 0.98);
+
+    position: relative;
+    z-index: 20;
+
+    border-bottom: 1px solid rgba(60, 65, 40, 0.04);
+}
+
+
+.header-container {
+    width: min(1320px, calc(100% - 80px));
+
+    height: 100%;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.brand-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    min-width: 150px;
+}
+
+
+.leaf-mark {
+    width: 30px;
+    height: 17px;
+
+    position: relative;
+
+    margin-bottom: 1px;
+}
+
+
+.leaf {
+    position: absolute;
+
+    width: 14px;
+    height: 8px;
+
+    background: var(--green);
+
+    border-radius: 100% 0 100% 0;
+
+    transform: rotate(-35deg);
+}
+
+
+.leaf-one {
+    left: 5px;
+    top: 4px;
+}
+
+
+.leaf-two {
+    right: 4px;
+    top: 0;
+
+    transform: rotate(35deg);
+}
+
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    line-height: 1;
+}
+
+
+.logo-name {
+    font-family: var(--serif);
+
+    font-size: 22px;
+    letter-spacing: 2px;
+
+    color: var(--green);
+}
+
+
+.logo-oil {
+    font-family: var(--sans);
+
+    font-size: 8px;
+    letter-spacing: 4px;
+
+    margin-top: 4px;
+
+    color: var(--green);
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.main-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 40px;
+
+    margin-left: 70px;
+}
+
+
+.main-navigation a {
+    font-size: 12px;
+    font-weight: 500;
+
+    color: #34372f;
+
+    transition: color 0.25s ease;
+}
+
+
+.main-navigation a:hover {
+    color: var(--green-light);
+}
+
+
+/* =========================
+   HEADER ACTIONS
+========================= */
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+
+.header-button {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-width: 133px;
+    height: 38px;
+
+    padding: 0 20px;
+
+    border-radius: 30px;
+
+    background: var(--gold);
+
+    font-size: 11px;
+    font-weight: 600;
+
+    color: #30341f;
+
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+.header-button:hover {
+    background: var(--gold-dark);
+    transform: translateY(-1px);
+}
+
+
+/* =========================
+   SEARCH ICON
+========================= */
+
+.search-button {
+    width: 32px;
+    height: 32px;
+
+    border: none;
+    background: transparent;
+
+    position: relative;
+
+    cursor: pointer;
+}
+
+
+.search-button span {
+    position: absolute;
+
+    width: 12px;
+    height: 12px;
+
+    border: 1.5px solid var(--green);
+
+    border-radius: 50%;
+
+    left: 7px;
+    top: 6px;
+}
+
+
+.search-button span::after {
+    content: "";
+
+    position: absolute;
+
+    width: 6px;
+    height: 1.5px;
+
+    background: var(--green);
+
+    transform: rotate(45deg);
+
+    right: -5px;
+    bottom: -3px;
+}
+
+
+/* =====================================================
+   HERO SECTION
+===================================================== */
+
+.hero-section {
+
+    min-height: 455px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            90deg,
+            #fff8e5 0%,
+            #fff7e0 45%,
+            #f8e9c4 100%
+        );
+}
+
+
+/* =========================
+   HERO CONTENT WRAPPER
+========================= */
+
+.hero-content {
+
+    width: min(1320px, calc(100% - 80px));
+
+    min-height: 455px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 43% 57%;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* =========================
+   HERO TEXT
+========================= */
+
+.hero-text {
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    padding:
+
+        48px
+
+        25px
+
+        45px
+
+        38px;
+}
+
+
+.eyebrow {
+
+    font-family: var(--sans);
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+
+    color: #647333;
+
+    margin-bottom: 14px;
+}
+
+
+.hero-text h1 {
+
+    font-family: var(--serif);
+
+    font-size: clamp(43px, 4vw, 58px);
+
+    font-weight: 500;
+
+    line-height: 0.99;
+
+    letter-spacing: -1.8px;
+
+    color: var(--green);
+
+    margin-bottom: 20px;
+}
+
+
+.hero-description {
+
+    max-width: 440px;
+
+    font-size: 13px;
+
+    line-height: 1.65;
+
+    color: #68675b;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   HERO BUTTONS
+========================= */
+
+.hero-buttons {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+}
+
+
+.primary-button {
+
+    min-width: 151px;
+
+    height: 40px;
+
+    padding: 0 18px;
+
+    border-radius: 24px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    background: var(--gold);
+
+    color: #30351f;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    transition: all 0.25s ease;
+}
+
+
+.primary-button span {
+
+    font-size: 17px;
+
+    line-height: 1;
+}
+
+
+.primary-button:hover {
+
+    background: var(--gold-dark);
+
+    transform: translateY(-2px);
+}
+
+
+.secondary-button {
+
+    min-width: 145px;
+
+    height: 40px;
+
+    padding: 0 18px;
+
+    border-radius: 24px;
+
+    border: 1px solid #a8a68f;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #4a4d3c;
+
+    font-size: 11px;
+
+    font-weight: 500;
+
+    background: rgba(255, 250, 236, 0.45);
+
+    transition: all 0.25s ease;
+}
+
+
+.secondary-button:hover {
+
+    border-color: var(--green);
+
+    color: var(--green);
+
+    background: rgba(255, 255, 255, 0.45);
+}
+
+
+/* =========================
+   HERO VISUAL
+========================= */
+
+.hero-visual {
+
+    min-height: 455px;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   HERO IMAGE
+========================= */
+
+.hero-image {
+
+    width: 100%;
+
+    height: 100%;
+
+    max-width: 780px;
+
+    object-fit: contain;
+
+    object-position: center;
+
+    display: block;
+
+    position: relative;
+
+    z-index: 2;
+
+    transform: translateX(-10px);
+}
+
+
+/* =========================
+   GOODNESS MESSAGE
+========================= */
+
+.goodness-message {
+
+    position: absolute;
+
+    right: 25px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    z-index: 5;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+}
+
+
+.goodness-message span {
+
+    font-family: var(--serif);
+
+    font-style: italic;
+
+    font-size: 17px;
+
+    line-height: 1.18;
+
+    color: #56632f;
+}
+
+
+.curved-arrow {
+
+    font-family: var(--serif);
+
+    font-size: 30px;
+
+    color: #66733b;
+
+    margin-left: -9px;
+
+    margin-top: 5px;
+
+    transform: rotate(-20deg);
+}
+
+
+/* =====================================================
+   DECORATIVE LEAVES
+===================================================== */
+
+.hero-leaves {
+
+    position: absolute;
+
+    z-index: 4;
+
+    pointer-events: none;
+}
+
+
+.left-leaves {
+
+    left: -8px;
+
+    bottom: -15px;
+
+    width: 90px;
+
+    height: 120px;
+}
+
+
+.bottom-leaves {
+
+    right: 12px;
+
+    bottom: -20px;
+
+    width: 90px;
+
+    height: 90px;
+}
+
+
+.decor-leaf {
+
+    position: absolute;
+
+    display: block;
+
+    width: 55px;
+
+    height: 27px;
+
+    background: #75943a;
+
+    border-radius: 100% 0 100% 0;
+
+    opacity: 0.95;
+}
+
+
+.leaf-a {
+
+    left: -5px;
+    bottom: 48px;
+
+    transform: rotate(30deg);
+}
+
+
+.leaf-b {
+
+    left: 23px;
+    bottom: 18px;
+
+    transform: rotate(-20deg);
+
+    width: 43px;
+    height: 22px;
+}
+
+
+.leaf-c {
+
+    left: -22px;
+    bottom: 5px;
+
+    transform: rotate(45deg);
+
+    width: 47px;
+    height: 23px;
+}
+
+
+.leaf-d {
+
+    right: 25px;
+    bottom: 15px;
+
+    transform: rotate(-35deg);
+}
+
+
+.leaf-e {
+
+    right: -5px;
+    bottom: -3px;
+
+    transform: rotate(25deg);
+
+    width: 43px;
+    height: 21px;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1000px) {
+
+    .header-container,
+    .hero-content {
+
+        width: min(100% - 40px, 900px);
+    }
+
+
+    .main-navigation {
+
+        gap: 22px;
+
+        margin-left: 20px;
+    }
+
+
+    .main-navigation a {
+
+        font-size: 11px;
+    }
+
+
+    .hero-text {
+
+        padding-left: 10px;
+    }
+
+
+    .hero-text h1 {
+
+        font-size: 43px;
+    }
+
+
+    .goodness-message {
+
+        right: 5px;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 760px) {
+
+    .site-header {
+
+        height: 68px;
+    }
+
+
+    .header-container {
+
+        width: calc(100% - 30px);
+    }
+
+
+    .brand-logo {
+
+        min-width: auto;
+    }
+
+
+    .logo-name {
+
+        font-size: 18px;
+    }
+
+
+    .logo-oil {
+
+        font-size: 7px;
+    }
+
+
+    .main-navigation {
+
+        display: none;
+    }
+
+
+    .header-actions {
+
+        gap: 5px;
+    }
+
+
+    .header-button {
+
+        min-width: auto;
+
+        height: 34px;
+
+        padding: 0 13px;
+
+        font-size: 9px;
+    }
+
+
+    .search-button {
+
+        display: none;
+    }
+
+
+    /* Hero */
+
+    .hero-section {
+
+        min-height: auto;
+    }
+
+
+    .hero-content {
+
+        width: 100%;
+
+        min-height: auto;
+
+        display: flex;
+
+        flex-direction: column;
+    }
+
+
+    .hero-text {
+
+        min-height: 390px;
+
+        padding:
+
+            55px
+
+            25px
+
+            35px;
+    }
+
+
+    .hero-text h1 {
+
+        font-size: 42px;
+
+        letter-spacing: -1px;
+    }
+
+
+    .hero-description {
+
+        font-size: 12px;
+
+        max-width: 380px;
+    }
+
+
+    .hero-buttons {
+
+        flex-wrap: wrap;
+    }
+
+
+    .hero-visual {
+
+        min-height: 330px;
+
+        height: 330px;
+    }
+
+
+    .hero-image {
+
+        width: 110%;
+
+        max-width: 650px;
+
+        transform: translateX(-5%);
+    }
+
+
+    .goodness-message {
+
+        right: 12px;
+
+        top: 15%;
+
+        transform: none;
+    }
+
+
+    .goodness-message span {
+
+        font-size: 14px;
+    }
+
+
+    .hero-leaves {
+
+        display: none;
+    }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 430px) {
+
+    .hero-text {
+
+        min-height: 375px;
+
+        padding-left: 20px;
+
+        padding-right: 20px;
+    }
+
+
+    .hero-text h1 {
+
+        font-size: 37px;
+    }
+
+
+    .hero-description {
+
+        font-size: 11.5px;
+
+        line-height: 1.6;
+    }
+
+
+    .primary-button,
+    .secondary-button {
+
+        height: 38px;
+
+        min-width: 135px;
+
+        font-size: 10px;
+    }
+
+
+    .hero-visual {
+
+        min-height: 280px;
+
+        height: 280px;
+    }
+
+
+    .goodness-message {
+
+        right: 8px;
+    }
+
+}
