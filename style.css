@@ -989,3 +989,709 @@ button {
     }
 
 }
+/* =====================================================
+   PART 2 — ABOUT SHUDDHA
+===================================================== */
+
+.about-section {
+    position: relative;
+
+    width: 100%;
+
+    padding: 95px 0 85px;
+
+    background: #fffaf0;
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.about-container {
+    width: min(1240px, calc(100% - 80px));
+
+    margin: 0 auto;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* =========================
+   SECTION LABEL
+========================= */
+
+.about-label {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 11px;
+
+    margin-bottom: 24px;
+
+    color: #71803d;
+
+    font-size: 9px;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+}
+
+
+.label-line {
+    width: 32px;
+
+    height: 1px;
+
+    background: #9ba578;
+}
+
+
+/* =========================
+   ABOUT INTRO
+========================= */
+
+.about-intro {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 90px;
+
+    align-items: center;
+
+    max-width: 1030px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================
+   ABOUT HEADING
+========================= */
+
+.about-heading h2 {
+    font-family: var(--serif);
+
+    font-size: clamp(45px, 4.5vw, 64px);
+
+    line-height: 1.02;
+
+    font-weight: 500;
+
+    letter-spacing: -1.8px;
+
+    color: var(--green);
+}
+
+
+.about-heading h2 em {
+    color: #70883b;
+
+    font-weight: 400;
+}
+
+
+/* =========================
+   ABOUT COPY
+========================= */
+
+.about-copy {
+    padding-top: 5px;
+}
+
+
+.about-main-text {
+    max-width: 485px;
+
+    font-family: var(--sans);
+
+    font-size: 14px;
+
+    line-height: 1.75;
+
+    color: #444a39;
+
+    margin-bottom: 15px;
+}
+
+
+.about-secondary-text {
+    max-width: 485px;
+
+    font-size: 12px;
+
+    line-height: 1.75;
+
+    color: #777667;
+}
+
+
+.about-signature {
+    display: inline-block;
+
+    margin-top: 24px;
+
+    padding-bottom: 7px;
+
+    border-bottom: 1px solid #a8ad86;
+
+    font-family: var(--serif);
+
+    font-size: 13px;
+
+    font-style: italic;
+
+    color: #5c6b35;
+}
+
+
+/* =========================
+   DIVIDER
+========================= */
+
+.about-divider {
+    width: min(900px, 80%);
+
+    margin: 55px auto 48px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 14px;
+}
+
+
+.about-divider span {
+    height: 1px;
+
+    flex: 1;
+
+    background: #e4ddc7;
+}
+
+
+.about-divider i {
+    font-size: 9px;
+
+    font-style: normal;
+
+    color: #879453;
+}
+
+
+/* =====================================================
+   VALUE CARDS
+===================================================== */
+
+.values-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 18px;
+}
+
+
+.value-card {
+    min-height: 245px;
+
+    padding: 28px 25px 25px;
+
+    position: relative;
+
+    background: #ffffff;
+
+    border: 1px solid rgba(106, 113, 69, 0.08);
+
+    border-radius: 5px;
+
+    box-shadow:
+        0 8px 25px rgba(75, 69, 35, 0.045);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.value-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 15px 35px rgba(75, 69, 35, 0.09);
+}
+
+
+/* =========================
+   VALUE ICON
+========================= */
+
+.value-icon {
+    width: 48px;
+
+    height: 48px;
+
+    border-radius: 50%;
+
+    background: #f7edca;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-bottom: 18px;
+
+    position: relative;
+}
+
+
+/* =========================
+   SEED ICON
+========================= */
+
+.seed-icon {
+    width: 17px;
+
+    height: 25px;
+
+    border-radius: 100% 0 100% 0;
+
+    border: 1.5px solid #617438;
+
+    transform: rotate(-35deg);
+
+    position: relative;
+}
+
+
+.seed-icon::after {
+    content: "";
+
+    position: absolute;
+
+    width: 1px;
+
+    height: 15px;
+
+    background: #617438;
+
+    left: 8px;
+
+    top: 4px;
+
+    transform: rotate(30deg);
+}
+
+
+/* =========================
+   DROP ICON
+========================= */
+
+.drop-icon {
+    width: 17px;
+
+    height: 23px;
+
+    background: transparent;
+
+    border: 1.5px solid #617438;
+
+    border-radius: 70% 35% 65% 65%;
+
+    transform: rotate(45deg);
+
+    position: relative;
+}
+
+
+.drop-icon::after {
+    content: "";
+
+    position: absolute;
+
+    width: 4px;
+
+    height: 4px;
+
+    border-radius: 50%;
+
+    background: #9cab5d;
+
+    left: 5px;
+
+    top: 8px;
+}
+
+
+/* =========================
+   LEAF ICON
+========================= */
+
+.leaf-icon {
+    width: 25px;
+
+    height: 15px;
+
+    border-radius: 100% 0 100% 0;
+
+    border: 1.5px solid #617438;
+
+    transform: rotate(-35deg);
+
+    position: relative;
+}
+
+
+.leaf-icon::after {
+    content: "";
+
+    position: absolute;
+
+    width: 1px;
+
+    height: 19px;
+
+    background: #617438;
+
+    left: 11px;
+
+    top: -3px;
+
+    transform: rotate(38deg);
+}
+
+
+.leaf-icon i {
+    position: absolute;
+
+    width: 6px;
+
+    height: 6px;
+
+    background: #84984c;
+
+    border-radius: 50%;
+
+    top: -8px;
+
+    right: -3px;
+}
+
+
+/* =========================
+   HEART ICON
+========================= */
+
+.heart-icon {
+    font-size: 20px;
+
+    line-height: 1;
+
+    color: #65783a;
+
+    font-family: Arial, sans-serif;
+}
+
+
+/* =========================
+   VALUE NUMBER
+========================= */
+
+.value-number {
+    position: absolute;
+
+    top: 29px;
+
+    right: 24px;
+
+    font-family: var(--sans);
+
+    font-size: 9px;
+
+    letter-spacing: 1px;
+
+    color: #b4b39e;
+}
+
+
+/* =========================
+   VALUE HEADING
+========================= */
+
+.value-card h3 {
+    font-family: var(--serif);
+
+    font-size: 22px;
+
+    font-weight: 500;
+
+    line-height: 1.05;
+
+    color: #2c3924;
+
+    margin-bottom: 13px;
+}
+
+
+/* =========================
+   VALUE DESCRIPTION
+========================= */
+
+.value-card p {
+    font-size: 11px;
+
+    line-height: 1.65;
+
+    color: #777669;
+
+    max-width: 210px;
+}
+
+
+/* =========================
+   BOTTOM NOTE
+========================= */
+
+.about-bottom-note {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 14px;
+
+    margin-top: 48px;
+}
+
+
+.about-bottom-note p {
+    font-family: var(--serif);
+
+    font-size: 13px;
+
+    font-style: italic;
+
+    color: #78864b;
+}
+
+
+.note-leaf {
+    color: #93a15b;
+
+    font-size: 20px;
+
+    transform: rotate(-25deg);
+}
+
+
+.note-leaf.reverse {
+    transform: rotate(155deg);
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1000px) {
+
+    .about-container {
+        width: calc(100% - 50px);
+    }
+
+
+    .about-intro {
+        gap: 50px;
+    }
+
+
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 15px;
+    }
+
+
+    .value-card {
+        min-height: 230px;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 700px) {
+
+    .about-section {
+        padding: 70px 0 65px;
+    }
+
+
+    .about-container {
+        width: calc(100% - 40px);
+    }
+
+
+    .about-intro {
+        display: block;
+
+        max-width: 100%;
+    }
+
+
+    .about-heading {
+        margin-bottom: 28px;
+
+        text-align: center;
+    }
+
+
+    .about-heading h2 {
+        font-size: 43px;
+
+        letter-spacing: -1px;
+    }
+
+
+    .about-copy {
+        text-align: center;
+    }
+
+
+    .about-main-text,
+    .about-secondary-text {
+        margin-left: auto;
+
+        margin-right: auto;
+    }
+
+
+    .about-signature {
+        margin-top: 20px;
+    }
+
+
+    .about-divider {
+        width: 90%;
+
+        margin-top: 40px;
+
+        margin-bottom: 35px;
+    }
+
+
+    .values-grid {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 12px;
+    }
+
+
+    .value-card {
+        min-height: 245px;
+
+        padding: 22px 18px;
+    }
+
+
+    .value-icon {
+        width: 43px;
+
+        height: 43px;
+
+        margin-bottom: 15px;
+    }
+
+
+    .value-number {
+        top: 24px;
+
+        right: 17px;
+    }
+
+
+    .value-card h3 {
+        font-size: 19px;
+    }
+
+
+    .value-card p {
+        font-size: 10.5px;
+    }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 430px) {
+
+    .about-section {
+        padding-top: 60px;
+    }
+
+
+    .about-heading h2 {
+        font-size: 38px;
+    }
+
+
+    .about-main-text {
+        font-size: 12.5px;
+    }
+
+
+    .about-secondary-text {
+        font-size: 11px;
+    }
+
+
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .value-card {
+        min-height: 190px;
+
+        padding: 22px;
+    }
+
+
+    .value-card h3 {
+        font-size: 21px;
+    }
+
+
+    .value-card p {
+        max-width: 280px;
+
+        font-size: 11px;
+    }
+
+
+    .about-bottom-note {
+        margin-top: 35px;
+    }
+
+}
